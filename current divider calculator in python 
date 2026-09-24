@@ -1,0 +1,11 @@
+# Current Divider Calculator
+
+It = float(input("Enter Total Current (A): "))
+R1 = float(input("Enter R1 (Ω): "))
+R2 = float(input("Enter R2 (Ω): "))
+
+I1 = It * (R2 / (R1 + R2))
+I2 = It * (R1 / (R1 + R2))
+
+print("Current through R1 =", I1, "A")
+print("Current through R2 =", I2, "A")
